@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  background: #000;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  display: none;
+  padding: 60px 20px;
+  text-align: center;
+  transition: opacity 0.6s ease;
+}
+
+.section.active {
+  display: block;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ff69b4;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+.get-in-touch,
+.edu-toggle,
+.submit-btn {
+  margin-top: 15px;
+  background-color: #ff69b4;
+  color: #000;
+  padding: 10px 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.get-in-touch:hover,
+.edu-toggle:hover,
+.submit-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.education-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  background: #111;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.education-details.show {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background: #1a1a1a;
+  margin: 15% auto;
+  padding: 15px;
+  border: 1px solid #ff69b4;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.close {
+  color: #ff69b4;
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #ff69b4;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: #ff69b4;
+  text-align: left;
+  font-size: 13px;
+}
+
+.submit-btn {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.typing-text {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 35px;
+  color: #ff69b4;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none;
+}
+
+.skill-item {
+  margin: 20px auto;
+  max-width: 250px; 
+}
+
+.skill-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #ff69b4;
+  box-shadow: 0 0 10px #ff69b4;
+  margin-bottom: 10px;
+}
+
+.fade {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.fade.show {
+  opacity: 1;
+}

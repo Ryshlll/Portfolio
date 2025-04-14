@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patriarca| Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" onclick="showSection('home')">Home</a></li>
+      <li><a href="#about" onclick="showSection('about')">About</a></li>
+      <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+      <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section active">
+    <div class="home-content">
+      <img src="image/rachelle.jpg" alt="Profile" class="profile-img" />
+      <h1 class="typing-text" data-text="Rachelle, Patriarca L."></h1>
+      <p class="subtitle">Software Developer</p>
+      <p class="typing-paragraph" data-text="Welcome to my portfolio! I am a passionate software developer. Let's connect and innovate together."></p>
+      <button class="btn get-in-touch" onclick="openModal()">Get in Touch</button>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="typing-text" data-text="Hi, I'm Rachelle"></h2>
+    <p class="typing-paragraph" data-text="I’m an aspiring IT student with a passion for technology and continuous learning. I have experience in C# programming, SQL databases, Microsoft Office, and editing."></p>
+    <button class="edu-toggle" onclick="toggleEducation()">Show Education Details</button>
+    <div id="education-details" class="education-details">
+      <ul>
+        <li><strong>Pamantasan ng Lungsod ng San Pablo</strong> (2023–Present)</li>
+        <li><strong>Capellan Institute of Technology</strong> (2021–2023)</li>
+        <li><strong>Sto Angel National High School</strong> (2018–2021)</li>
+        <li><strong>Sto Angel Elementary School</strong> (2011–2017)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="typing-text" data-text="Skills"></h2>
+    <div class="skill-item">
+      <img src="image/coding.jpg" alt="Coding" />
+      <h3>Coding</h3>
+      <p class="typing-paragraph" data-text="Proficient in C#, SQL, and web development technologies."></p>
+    </div>
+    <div class="skill-item">
+      <img src="image/edit.jpg" alt="Designing" />
+      <h3>Designing</h3>
+      <p class="typing-paragraph" data-text="Experienced in graphic design, UI/UX, and visual aesthetics."></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>📞 <a href="tel:09109445770">0910-944-5770</a></p>
+    <p>✉️ <a href="mailto:patriarcarachelle58@gmail.com">patriarcarachelle58@gmail.com</a></p>
+    <p>🌐 <a href="https://www.facebook.com/rachelle.patriarca.18" target="_blank">Facebook</a></p>
+    <p>🌐 <a href="https://www.instagram.com/_.ryshl" target="_blank">Instagram</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rachelle. All rights reserved.</p>
+  </footer>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Get in Touch</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="chelle.js"></script>
+</body>
+</html>
